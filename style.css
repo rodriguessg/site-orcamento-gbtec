@@ -1,0 +1,336 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor-1:#131313;
+    --cor-2:#3F3E3E;
+    --cor-3:#FEF5E3;
+    --cor-4: #2e91e8;
+    --titulo: "Aeriast";
+    --texto:"Montserrat", sans-serif;
+  }
+  
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+
+
+
+.foto {
+
+    width: 50%;
+    height: 30%;
+}
+.duvidas{
+    background-color: var(--cor-2);
+    color: var(--cor-3);
+    font-family: var(--texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 40rem;
+   
+  }
+  .duvidas-texto h1{
+    font-size: 2.5rem;
+  }
+  .duvidas-texto p{
+    margin-top: 10px;
+    font-size: 1.8rem;
+    width: 40rem;
+    margin-right: 3.5rem;
+  }
+  .duvidas-formulario form{
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  }
+  .duvidas-formulario{
+    width: 340px;
+    height: 380px;
+    background-color: var(--cor-4);
+    padding: 20px;
+    border-radius: 12px;
+    border:1px solid rgba(255, 255, 255,0.5);
+    filter: drop-shadow(2px 2px 4px rgba(255, 255, 255, 0.2));
+  }
+  form{
+    margin-top: 20px;
+    
+  }
+  input, textarea, select {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid rgba(254, 245, 227, 0.2);
+    filter: drop-shadow(4px 4px 4px rgba(18, 17, 17, 0.2));
+    margin-top: 10px;
+    font-family: var(--texto);
+  }
+
+
+  input{
+    width: 300px;
+    height: 30px;
+   
+  }
+  textarea{
+    width: 300px;
+    height: 100px;
+  }
+
+  .hidden {
+    display: none;
+}
+
+#confirmationMessage {
+    text-align: center;
+   
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+   
+    border-radius: 8px;
+}
+
+
+  .input::placeholder {
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 1rem;
+  }
+  .duvidas-formulario h1{
+   font-size: 1.3rem;
+   text-align: center;
+   margin-top: 20px;
+  }
+  .enviar{
+    width: 200px;
+    height: 30px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 15px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: var(--cor-1);
+  font-family: var(--texto);
+  font-weight: 500;
+  border-color:rgba(254, 245, 227,0.2);
+  filter: drop-shadow(4px 4px 4px rgba(18, 17, 17, 0.2));
+  cursor: pointer;
+  }
+  .enviar:hover{
+  background-color: var(--cor-2);
+  color: var(--cor-3);
+  }
+  .apresentacao__links__navegacao {
+    /* comentar é ctrl + k + c */
+    /* background-color: #22d4fd; */
+    border: 2px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600 ;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color:var(--cor-secundaria);
+    font-family: var(--font-secundaria);
+    /* Posicionamento de itens */
+    display: inline;
+    justify-content: space-between;
+    gap:16px;
+
+
+
+}
+
+.apresentacao__links__navegacao:hover {
+    background-color: var(--cor-hover);
+}
+
+  .copy{
+    font-family: var(--texto);
+    background-color: var(--cor-4);
+    text-align: center;
+
+    }
+    .footer-copy{
+      color: var(--cor-1);
+      font-size: 1.5rem;
+      
+    }
+    .footer-copy:hover{
+      color: var(--cor-3);
+    }
+
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+
+.developer-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.message {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+}
+
+.message h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.message p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn-contratar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.btn-contratar:hover {
+    background-color: #45a049;
+}
+
+.developer-image {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+.developer-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive {
+        position: relative;
+    }
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .developer-section {
+        flex-direction: column-reverse;
+    }
+    .message, .developer-image {
+        max-width: 100%;
+    }
+    .message {
+        text-align: center;
+    }
+
+    .contact-section {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contact-section form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-section input,
+.contact-section select,
+.contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-submit {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #45a049;
+}
+}
