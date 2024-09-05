@@ -333,4 +333,30 @@ body {
 .btn-submit:hover {
     background-color: #45a049;
 }
+
+#contato {
+   margin-bottom: 10%;
+}
+.duvidas {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 17%;
+    height: 100vh;
+}
+.sub_duv {
+    padding: 2px;
+    max-width: 50%;
+    margin-left: 25%;
+    text-align: center;
+}
+
+.sub_duv_ {
+    max-width: 50%;
+    margin-left: 25%;
+    text-align: center; /* Centraliza o título */
+  }
+.apresentacao__links__navegacao{
+    margin-left: 40rem;
+    
+}
 }
