@@ -188,12 +188,12 @@ body {
 
     }
     .footer-copy{
-      color: var(--cor-1);
+      color: var(--cor-3);
       font-size: 1.5rem;
       
     }
     .footer-copy:hover{
-      color: var(--cor-3);
+      color: var(--cor-1);
     }
 
 @media screen and (max-width: 600px) {
