@@ -105,8 +105,16 @@ body {
    
   }
   textarea{
-    width: 300px;
-    height: 100px;
+    width: 290px;
+    height: 70px;
+    font-size: 20px;
+    padding: 10px;
+  }
+  select {
+    width: 309px;
+    height: 30px;
+    font-size: 18px;
+    cursor: pointer;
   }
 
   .hidden {
@@ -316,6 +324,7 @@ body {
     border-radius: 5px;
     font-size: 16px;
 }
+
 
 .btn-submit {
     display: inline-block;
