@@ -17,7 +17,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
     const message = encodeURIComponent(document.getElementById('msg').value);
 
     // Cria a mensagem para o WhatsApp
-    const whatsappMessage = `Olá, meu nome é ${name}. Meu e-mail é ${email}. Estou interessado no serviço de ${service}. Mensagem adicional: ${message}`;
+    const whatsappMessage = `Olá, meu nome é ${name}. Meu e-mail é ${email}. Estou interessado no serviço de ${service}. Mensagem : ${message}`;
     const whatsappLink = `https://wa.me/5521993579144?text=${whatsappMessage}`;
 
     // Abre o link no WhatsApp Web em uma nova aba
